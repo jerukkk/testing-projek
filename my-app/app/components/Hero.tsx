@@ -6,7 +6,7 @@ export default function Hero() {
       {/* Background Image - Natural size based on image aspect ratio */}
       <div className="relative w-full overflow-hidden">
         <img
-          src="/header web - 1 1.webp"
+          src="/header web - 1.webp"
           alt="UNHAS MUN Header"
           className="w-full h-[85vh] object-cover md:h-auto md:object-contain"
         />
