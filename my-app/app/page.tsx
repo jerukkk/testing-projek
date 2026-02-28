@@ -4,6 +4,7 @@ import FeaturedArticles from '@/app/components/FeaturedArticles';
 import WelcomingRemarks from '@/app/components/WelcomingRemarks';
 import AboutSection from '@/app/components/AboutSection';
 import Footer from '@/app/components/Footer';
+import MobileNav from '@/app/components/MobileNav';
 
 export default function Home() {
   return (
@@ -24,16 +25,17 @@ export default function Home() {
           <WelcomingRemarks />
           <AboutSection />
         </div>
-        {/* Tongkonan decoration - bottom touches footer */}
+        {/* Tongkonan decoration - attached to footer */}
         <div className="relative w-full">
           <img
-            src="/TongkonanFooter 1.svg"
+            src="/Group 169 (1).svg"
             alt=""
-            className="w-full h-auto block opacity-20"
+            className="w-full h-auto block"
           />
         </div>
         <Footer />
       </section>
+      <MobileNav />
     </main>
   );
 }

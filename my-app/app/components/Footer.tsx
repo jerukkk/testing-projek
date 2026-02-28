@@ -1,32 +1,22 @@
 export default function Footer() {
   return (
     <footer className="relative">
-
-      {/* ── Transition image ── */}
-      <div className="w-full">
-        <img
-          src="/Rectangle 185 (1).svg"
-          alt=""
-          className="w-full h-auto object-cover block"
-        />
-      </div>
-
       {/* ── Dark red footer bar ── */}
       <div
-        className="relative flex flex-col items-center justify-center gap-4 py-8 px-6 md:px-6"
+        className="relative flex flex-col items-center justify-center gap-4 py-8 px-6 md:px-6 md:pb-8 pb-28"
         style={{ backgroundColor: "#710004" }}
       >
-        {/* Logo — pojok kiri */}
-        <div className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2">
+        {/* Logo — pojok kiri (desktop only) */}
+        <div className="hidden md:block absolute left-8 top-8">
           <img
             src="/LOGO UNHASMUN 25 (1).webp"
             alt="UNHAS MUN Logo"
-            className="w-20 h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 object-contain"
+            className="w-24 h-24 lg:w-32 lg:h-32 object-contain"
           />
         </div>
 
         {/* Copyright */}
-        <p className="text-white text-xs md:text-sm font-medium text-center mt-12 md:mt-0">
+        <p className="text-white text-xs md:text-sm font-medium text-center">
           © 2026 Unhas MUN, All rights reserved.
         </p>
 
@@ -75,7 +65,6 @@ export default function Footer() {
           </a>
         </div>
       </div>
-
     </footer>
   );
 }
